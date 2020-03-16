@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Curso de JS - Aula 06</title>
+	<style type="text/css">
+		body{
+			background: rgb(241, 229, 229);
+		}
+		h1{
+			color: darkorange;
+		}
+	</style>
+</head>
+<body>
+	<h1>Manipulação de dados</h1>
+		<p>
+			Para o JS os dados armazedos via prompt são retornados como <i>string</i>, 
+			então é preciso converter para o tipo de dado desejado.</br>
+			Para conversão de <i>String</i> para <i>number</i> podemos usar as funções 
+			</br><code>Number.parseInt(n)</code> para inteiro, 
+			</br><code>Number.parseFloar(n)</code> para ponto flutuante
+			</br><code>Number(n)</code> onde cria-se um objeto do tipo number, se o argumento 
+			não poder ser convertido retorna um <code>NaN</code>.
+			</br>Para a conversão para dado do tipo <i>String</i> usa o <code>String(s)</code>.
+		</p>
+	
+	<h1>Formatação de strings  e números</h1>
+	<p>
+		Com o ECMAScript 6 é possivel utilizar o <i>Template string</i> que são strings 
+		multilinha e interpolação de string. Os <i>Template string</i> são envolvidos por acentos grave `` 
+		e podem possuir placeholder ${}. Que apresenta um código mais limpo em comparação com a 
+		concatenação.
+		</br>Exemplo:
+		</br> <code>console.log('Quinze é ' + (a + b) + ' e\nnão ' + (2 * a + b) + '.'); // concatenação</code>
+		<br><code>console.log(`Quinze é ${a + b} e não ${2 * a + b}.`);//Template string <br>
+		s.length // comprimento da string <br>
+		s.toUpperCase(); //Todas os caracteres MAIUSCULO
+		</code>
+		<br> Com JS é possivel formatar números tambem, por exemplo para a quantidade de casas decimais apos
+		a virgula utiliza <code>number.toFixed(n)</code>, onde number é o valor formatado e n número de casas.
+		Outro exemplo é possibilidade de formatar de acordo com a localização geografica da informação 
+		<code>n.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})</code>
+	</p>
+	<script>
+	/*	var name = window.prompt("Qual o seu nome?"); //Solicitando informação via prompt
+		window.alert("Bem vindo " + name + "!"); // + Concatenação */
+
+		var n1 = Number(window.prompt("Digite um número: "));
+		var n2 = Number(window.prompt("Digite outro número: "));
+		var s = n1 + n2;
+		window.alert("A soma dos números é " + s);
+
+		var nome = window.prompt("Qual o seu nome?");
+		document.write(`Olá, ${nome.toUpperCase()}! O seu nome tem ${nome.length} letras.`)
+		
+		var n1 = 1234.5
+		document.writeln(`<br>n1 com duas casas decimais: ${n1} -> ${n1.toFixed(2)}`);
+		document.write(`<br>n1 em Reais: ${n1.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})}`)
+
+	</script>
+</body>
+</html>
