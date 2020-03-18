@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <title>Curso JavaScript - Aula 09</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        body {
+            background: rgb(82, 176, 219);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos de DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+
+    <h2>O que é o DOM?</h2>
+
+    <p>O DOM (Document Object Model) 
+        é uma interface que representa como os documentos HTML e XML são lidos pelo seu browser. 
+        Após o browser ler seu documento HTML, ele cria um objeto que faz uma representação estruturada 
+        do seu documento e define meios de como essa estrutura pode ser acessada. 
+        Nós podemos acessar e manipular o DOM com JavaScript, é a forma mais fácil e usada.<br>
+    <img style="width: 400pt; height: 300pt;" src="https://i.imgur.com/lu4PMfw.jpg"></p>
+
+    <script>
+        window.document.write("<br>modificando o DOM<br>") //Modificando a arvore DOM de acordo com a hierarquia
+
+        var p1 = window.document.getElementsByTagName('p')[0] //posição da Tag
+        /*
+            Selecionando elementos da árvore DOM 
+            por marca utilizando getElementsByTagName
+            e informando a posição do elemento na arvore 
+        */
+        window.document.write(`O texto selecionado foi: ${p1.innerText}`);
+        p1.style.color = 'gray';
+
+        var d = window.document.getElementById('msg'); //tag tem id unico
+
+
+    </script>
+    
+</body>
+</html>
