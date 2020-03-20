@@ -16,8 +16,11 @@
 <body>
     <h1>Iniciando os estudos de DOM</h1>
     <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div id="msg">Clique em mim</div>
+    <p id='first' class="text">Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <p id='second' class="text">Aprendendo a usar o <strong>DOM 2</strong> em JavaScript</p>
+    
+    <div class="par">Clique em mim</div>
+    <div class="par">Clique em mim 2</div>
 
     <h2>O que é o DOM?</h2>
 
@@ -27,9 +30,27 @@
         do seu documento e define meios de como essa estrutura pode ser acessada. 
         Nós podemos acessar e manipular o DOM com JavaScript, é a forma mais fácil e usada.<br>
     <img style="width: 400pt; height: 300pt;" src="https://i.imgur.com/lu4PMfw.jpg"></p>
+    <p>
+        Para cada página carregada no browser, existe um objeto Document e para acessar esses elementos da arvore DOM
+        utiliza funções como:
+        <ul>
+            <li><strong>getElementById(id):</strong> Retorna a referência do elemento através do seu ID.</li>
+            <li><strong>getElementByName:</strong> </li>
+            <li><strong>getElementsByTagName:</strong> O método getElementsByTagName da interface Document retorna um 
+                HTMLCollection de elementos com o nome da tag fornecido. O documento completo é pesquisado, 
+                ndo o nó raiz. A HTMLCollection retornada é ao vivo, o que significa que ela se atualiza 
+                automaticamente para permanecer em sincronia com a árvore DOM sem ter que chamar 
+                document.getElementsByTagName () novamente.</li>
+            <li><strong>getElementByClassName:</strong> Retorna um vetor de objetos com todos os elementos filhos que possuem
+                 o nome da classe dada.  Quando invocado no objeto document, o documento é examinado por completo,
+                  incluindo o nó raiz </li>
+            <li><strong>querySelector():</strong> Retorna o primeiro elemento dentro do documento (usando ordenação em profundidade, 
+                pré-ordenada e transversal dos nós do documento) que corresponde ao grupo especificado de seletores, é uma string que contém um ou mais seletores CSS separados por vírgulas.,</li>
+        </ul>
+    </p>
 
     <script>
-        window.document.write("<br>modificando o DOM<br>") //Modificando a arvore DOM de acordo com a hierarquia
+        window.document.write("<br>modificando o <strong>DOM</strong><br>") //Modificando a arvore DOM de acordo com a hierarquia
 
         var p1 = window.document.getElementsByTagName('p')[0] //posição da Tag
         /*
@@ -38,10 +59,17 @@
             e informando a posição do elemento na arvore 
         */
         window.document.write(`O texto selecionado foi: ${p1.innerText}`);
-        p1.style.color = 'gray';
+        p1.style.color = 'red';
 
-        var d = window.document.getElementById('msg'); //tag tem id unico
-
+        //var d = window.document.getElementById('msg'); //tag tem id unico
+        
+        var aux = window.document.querySelector('.par');//Retorna o primeiro elemento da busca
+        aux.style.background = 'orange';
+        /*
+            Nomenclatura CSS
+            # para id
+            . para class
+        */
 
     </script>
     

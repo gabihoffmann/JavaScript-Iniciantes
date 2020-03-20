@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <title>Curso JavaScript - Aula 10 - Exercicio</title>
+    <style>
+        /* body {
+            background: rgb(82, 176, 219);
+            color: white;
+            font: normal 18pt Arial;
+        }
+
+        div{
+            background: gray;
+            color: honeydew;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        } */
+    </style>
+</head>
+<body>
+    <h2>Somando valores</h2>
+    <input type="number" name='valor1' id='txtn1'> 
+    <input type="number" name='valor2' id='txtn2'>
+    <input type="button" onclick="somar()" value="somar">
+    <div id="res"> Resultado: </div>
+    
+    <script>
+        function somar(){
+            var tx1 = window.document.getElementById('txtn1')
+            var tx2 = window.document.getElementById('txtn2')
+
+            var n1 = Number(tx1.value)
+            var n2 = Number(tx2.value)
+
+            var result = n1+n2;
+
+            var res = window.document.querySelector('#res')
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${result}`
+
+        }
+        
+
+    </script>
+</body>
+</html>

@@ -10,9 +10,10 @@
 
 # My goals
 
-    Finish the course: Curso Grátis de JavaScript e ECMAScript para iniciantes
-    Finish my Rocketseat courses
+    -[ ] Finish the course: Curso Grátis de JavaScript e ECMAScript para iniciantes
+    -[ ] Finish my Rocketseat courses
+    -[ ] Participate in the 11th OmniStack Week
     
 # Instagram Posts 
  
-  [Day 0](https://www.instagram.com/p/B9zYHtBgIug/) | [Day 1](https://www.instagram.com/p/B9zYx7Ngs3P/)
+  [Day 0](https://www.instagram.com/p/B9zYHtBgIug/) | [Day 1](https://www.instagram.com/p/B9zYx7Ngs3P/) | [Day 2](https://www.instagram.com/p/B9-EA2kgEMq/)

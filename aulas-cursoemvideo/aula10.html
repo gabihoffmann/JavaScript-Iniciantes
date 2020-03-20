@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <title>Curso JavaScript - Aula 10</title>
+    <style>
+        body {
+            background: rgb(82, 176, 219);
+            color: white;
+            font: normal 18pt Arial;
+        }
+
+        div{
+            background: gray;
+            color: honeydew;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eventos DOM</h1>
+    <p>Eventos Dom (Dom Events) são utilizados para notificar o código de novidades durante
+         a navegação do usuário. Cada evento é representado por um objeto que é baseado na 
+         interface Event, e pode ter campos customizados adicionados e/ou funções usadas 
+         para obter informações adicionais sobre o que aconteceu. 
+         Eventos podem representar desde interações básicas do usuário 
+         (cliques, rolagem da página...) até notificações automáticas de novidades no DOM. 
+    </p>
+        
+    <h2>Eventos de mouse em uma div</h2>
+    <div id="area" onclick="clicar()">
+        Interaja!</div>
+    <script>
+        var aux = window.document.getElementById('area');
+        
+        aux.addEventListener('click', clicar);
+        aux.addEventListener('mouseenter', entrar);
+        aux.addEventListener('mouseout', sair)
+        
+        function clicar(){
+            aux.innerText = 'clicou';
+            aux.style.background = 'red';
+        }
+        function entrar(){
+            aux.innerText = 'entrou';
+            aux.style.background = 'blue';
+        }
+
+        function sair(){
+            aux.innerText = 'saiu';
+            aux.style.background = 'green';
+        }
+
+
+    </script>
+</body>
+</html>
