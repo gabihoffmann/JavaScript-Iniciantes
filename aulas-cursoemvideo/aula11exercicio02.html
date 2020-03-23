@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Qual pais</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <h1>Brasileiro ou Estrangeiro?</h1>
+    Qual o seu pais de origem ? <input type="text" id="txtpais">
+    <input type="button" value="Enviar" onclick="analisar()">
+    <div id="res"></div>
+
+    <script>
+       function analisar(){
+            var txtpais = window.document.querySelector("input#txtpais");
+            var strpais = String(txtpais.value);
+
+            var res = window.document.querySelector('div#res');
+
+            if (strpais == 'Brasil'){
+                res.innerHTML += '<p>Você é brasileiro! 🇧🇷</p>'
+            }else{
+                res.innerHTML += '<p>Você não é brasileiro!</p>'
+            }
+        }
+
+    </script>
+
+</body>
+</html>
