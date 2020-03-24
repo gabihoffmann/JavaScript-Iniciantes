@@ -13,7 +13,6 @@ function verificar(){
 
         var image = document.createElement('img')
         image.setAttribute('id' , 'foto')
-        image.s
             
         var gen_str = "";
         
