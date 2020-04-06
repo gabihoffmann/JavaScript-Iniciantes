@@ -12,7 +12,8 @@
 
     -[x] Finish the course: Curso Grátis de JavaScript e ECMAScript para iniciantes
     -[ ] Finish my Rocketseat courses
-    -[x] Participate in the 11th OmniStack Week [Be The Hero](https://github.com/gabihoffmann/be-the-hero-rocketseat)
+    -[x] Participate in the 11th OmniStack Week
+   [Be The Hero](https://github.com/gabihoffmann/be-the-hero-rocketseat)
     
 # Instagram Posts 
  
