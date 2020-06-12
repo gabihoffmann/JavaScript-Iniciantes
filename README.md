@@ -1,23 +1,20 @@
-# JavaScript-Iniciantes
-  My personal challenge to learn JS
+# 📚 Learn Javascript
 
-# My personal rules
+This repository is intended for the study and practice of programming with Javascript
 
-   Just code in working days (enjoy you weekend, honey!)
-   Do practical exercises every day
-   Post at Instagram [@hoffmanncode](https://www.instagram.com/hoffmanncode/)
-
-# My goals
-
-   -[x] Finish the course: Curso Grátis de JavaScript e ECMAScript para Iniciantes
-   -[ ] Finish my Rocketseat courses
-   -[x] Participate in the 11th OmniStack Week
-    
-# Course links
+# 🎓 Course links
    [Curso Grátis de JavaScript e ECMAScript para Iniciantes](https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1)
 
-   [Be The Hero](https://github.com/gabihoffmann/be-the-hero-rocketseat)
+   [RocketSeat Starter](https://rocketseat.com.br/starter)
+
+## 🗂 Index
+
+- [C&V - Classes](https://github.com/gabihoffmann/javascript-learn/tree/master/aulas-cursoemvideo)
+- [C&V - Practical exercises](https://github.com/gabihoffmann/javascript-learn/tree/master/pratica-cursoemvideo)
+- [🚀Starter - Classes](#)
+- [🚀Starter - Practical exercises](#)
     
-# Instagram Posts 
+## 🙋🏻‍♀️ Author
+
+Desenvolvido com 🧡por [Gabi Hoffmann](https://www.linkedin.com/in/agfhoffmann/)
  
-  [Day 0](https://www.instagram.com/p/B9zYHtBgIug/) | [Day 1](https://www.instagram.com/p/B9zYx7Ngs3P/) | [Day 2](https://www.instagram.com/p/B9-EA2kgEMq/)
