@@ -9,8 +9,8 @@ This repository is intended for the study and practice of programming with Javas
 
 ## 🗂 Index
 
-- [C&V - Classes](https://github.com/gabihoffmann/javascript-learn/tree/master/aulas-cursoemvideo)
-- [C&V - Practical exercises](https://github.com/gabihoffmann/javascript-learn/tree/master/pratica-cursoemvideo)
+- [💻C&V - Classes](https://github.com/gabihoffmann/javascript-learn/tree/master/aulas-cursoemvideo)
+- [💻C&V - Practical exercises](https://github.com/gabihoffmann/javascript-learn/tree/master/pratica-cursoemvideo)
 - [🚀Starter - Classes](#)
 - [🚀Starter - Practical exercises](#)
     

@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <title>Document</title>
+    <title>Analizador de Números</title>
 </head>
 <body>
     <header>
-        <h1>Titulo</h1>
+        <h1>Analizador de Números</h1>
     </header>
     <section>
-        <div>Testando</div>
-        <div> Olá!</div>
+        <div>Número: 
+            <input type="text" name="number" id="txtnumber" value="entre 1 e 100" onfocus="this.value=''">
+            <input type="button" value="Click me" onclick="adicionar()">
+        </div>
+        <br>
+        <div>
+            <select name="flista" id="flista" size="6"></select> 
+            <br>
+            <input type="button" onclick="analizar()" value="Analizar">
+        </div>
+        <div id="res">
+
+        </div>
 
     </section>
     <footer>

@@ -41,20 +41,9 @@ function verificar(){
             }else{
                 image.setAttribute('src', 'images/idoso-homem.png')
             }
-
-            
         }
 
-        
-    
-
-        
         res.innerHTML = `Detectamos ${gen_str} de ${idade} anos`;
         res.appendChild(image);
     }
-
-
-   
-
-    
 }
